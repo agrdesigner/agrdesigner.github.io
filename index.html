@@ -1,81 +1,138 @@
-  <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>AGRDESIGNER - Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/build/assets/css/agrdesigner.min.css">
-        <script src="/build/assets/js/agrdesigner.min.js"></script>
-      </head>
-      <body class="agrdesigner">
-        <!-- svg -->
-        <div class="svg-icon-map" style="display: none;">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook"><path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path></symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="github"><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="instagram"><path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
-            <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
-            <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path></symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="linkedin"><path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
-            <path d="M2 12h6v18h-6v-18z"></path>
-            <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path></symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter"><path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path></symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 32" id="behance"><path d="M33 6.054h-9.125v2.214h9.125v-2.214zM28.5 13.661c-2.143 0-3.571 1.339-3.714 3.482h7.286c-0.196-2.161-1.321-3.482-3.571-3.482zM28.786 24.107c1.357 0 3.107-0.732 3.536-2.125h3.946c-1.214 3.732-3.732 5.482-7.625 5.482-5.143 0-8.339-3.482-8.339-8.554 0-4.893 3.375-8.625 8.339-8.625 5.107 0 7.929 4.018 7.929 8.839 0 0.286-0.018 0.571-0.036 0.839h-11.75c0 2.607 1.375 4.143 4 4.143zM4.946 23.214h5.286c2.018 0 3.661-0.714 3.661-2.982 0-2.304-1.375-3.214-3.554-3.214h-5.393v6.196zM4.946 13.625h5.018c1.768 0 3.018-0.768 3.018-2.679 0-2.071-1.607-2.571-3.393-2.571h-4.643v5.25zM0 4.536h10.607c3.857 0 7.196 1.089 7.196 5.571 0 2.268-1.054 3.732-3.071 4.696 2.768 0.786 4.107 2.875 4.107 5.696 0 4.571-3.839 6.536-7.929 6.536h-10.911v-22.5z"></path></symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 717 1024" id="agrdesigner-logo"><path d="M533.251 388.342c0-1.841 1.439-3.335 3.288-3.335 19.854 0 124.482-0.024 161.907 0.048 13.796 0.036 20.6 8.427 17.692 23.536-20.926 108.39-91.193 220.481-197.080 287.395-14.783 9.345-25.189 12.566-6.991 40.775 10.165 15.343 148.942 224.056 178.936 269.161 2.433 3.671-0.211 8.559-4.625 8.559h-14.693c-1.855 0-3.571-0.882-4.595-2.429-11.122-16.782-77.030-116.206-111.926-168.826-6.196-9.363-52.913-79.834-72.044-108.69-11.586-17.454-29.019-15.667-36.805-15.667-105.616 0-305.857 0.168-401.212 0.024-13.645-0.366-19.812 7.647-19.547 19.41l-0.578 280.185c0 3.047-2.481 5.512-5.54 5.512h-17.234c-1.228 0-2.204-0.96-2.204-2.165 0.018-46.341 0-895.911 0-995.503 0-21.689 3.547-25.989 25.291-26.211 39.96-0.42 255.961 0.18 350.514 2.975 144.986 5.626 276.862 98.709 326.993 234.21 0.807 2.195-0.873 4.54-3.228 4.517l-21.239-0.258c-1.355-0.012-2.553-0.84-3.029-2.105-13.663-35.868-34.571-70.201-63.439-101.672-95.403-103.922-202.53-111.905-310.801-111.257h-240.087c-10.574 0-12.122 8.937-4.787 20.111 57.785 87.925 347.299 525.24 414.158 625.155 16.747 25.036 60.898-11.636 91.151-38.045 65.258-59.536 109.018-135.741 125.975-214.321 1.415-6.55-2.348-11.288-9.045-11.288-26.423 0-122.844-0.15-141.891-0.18-1.849 0-3.288-1.494-3.288-3.329v-16.291zM25.177 673.92c0.030 7.084 0.114 22.067 15.283 22.067h291.832c23.69 0 79.373-0.63 100.039-0.156 16.494 0.396 19.824-7.899 10.797-21.599-77.777-118.023-361.426-550.684-406.216-616.884-3.944-5.842-11.706-4.157-11.652 3.359 0.096 15.265 0.030 171.555 0.030 171.555s-0.409 377.977-0.114 441.658v0z"></path></symbol>
-          </svg>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AGRDESIGNER - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/agrdesigner.css">
+    <!-- <script src="/build/assets/js/agrdesigner.min.js"></script> -->
+  </head>
+  <body class="agrdesigner">
+    <!-- svg -->
+    <div class="svg-icon-map" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook"><path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="github"><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="instagram"><path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+        <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+        <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="linkedin"><path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+        <path d="M2 12h6v18h-6v-18z"></path>
+        <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter"><path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 32" id="behance"><path d="M33 6.054h-9.125v2.214h9.125v-2.214zM28.5 13.661c-2.143 0-3.571 1.339-3.714 3.482h7.286c-0.196-2.161-1.321-3.482-3.571-3.482zM28.786 24.107c1.357 0 3.107-0.732 3.536-2.125h3.946c-1.214 3.732-3.732 5.482-7.625 5.482-5.143 0-8.339-3.482-8.339-8.554 0-4.893 3.375-8.625 8.339-8.625 5.107 0 7.929 4.018 7.929 8.839 0 0.286-0.018 0.571-0.036 0.839h-11.75c0 2.607 1.375 4.143 4 4.143zM4.946 23.214h5.286c2.018 0 3.661-0.714 3.661-2.982 0-2.304-1.375-3.214-3.554-3.214h-5.393v6.196zM4.946 13.625h5.018c1.768 0 3.018-0.768 3.018-2.679 0-2.071-1.607-2.571-3.393-2.571h-4.643v5.25zM0 4.536h10.607c3.857 0 7.196 1.089 7.196 5.571 0 2.268-1.054 3.732-3.071 4.696 2.768 0.786 4.107 2.875 4.107 5.696 0 4.571-3.839 6.536-7.929 6.536h-10.911v-22.5z"></path></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="medium-logo"><path d="M5.827 9.733c0.040-0.333-0.093-0.653-0.333-0.867l-2.493-3v-0.453h7.733l5.973 13.107 5.253-13.107h7.373v0.453l-2.133 2.040c-0.173 0.133-0.267 0.373-0.227 0.6v14.987c-0.040 0.227 0.053 0.467 0.227 0.6l2.080 2.040v0.453h-10.453v-0.453l2.147-2.093c0.213-0.2 0.213-0.267 0.213-0.587v-12.12l-5.987 15.2h-0.8l-6.973-15.2v10.187c-0.093 0.427 0.080 0.853 0.387 1.147l2.8 3.427v0.44h-7.947v-0.44l2.8-3.427c0.307-0.293 0.44-0.72 0.36-1.147v-11.787z"/></symbol>
+        <symbol id="arrow-right" viewBox="0 0 38 32"><path d="M4.369 13.275h25.113l-9.45-9.1c-0.408-0.379-0.613-0.831-0.613-1.356s0.182-0.984 0.547-1.378c0.365-0.394 0.809-0.591 1.334-0.591s0.992 0.175 1.4 0.525l12.862 12.425c0.408 0.379 0.612 0.839 0.612 1.378s-0.204 0.999-0.612 1.378l-12.95 12.469c-0.379 0.35-0.817 0.525-1.313 0.525-0.554 0-1.021-0.204-1.4-0.613-0.379-0.379-0.561-0.831-0.547-1.356s0.211-0.977 0.591-1.356l9.45-9.1h-25.069c-0.496 0-0.933-0.175-1.313-0.525s-0.583-0.773-0.612-1.269c-0.029-0.554 0.153-1.035 0.547-1.444s0.868-0.612 1.422-0.612z" /></symbol>
+      </svg>
+    </div>
+    <nav class="agrdesigner-nav">
+      <p class="agrdesigner-nav-description">Follow me / my work</p>
+      <ul class="agrdesigner-nav-list">
+        <li class="agrdesigner-nav-list__item">
+          <a href="https://www.behance.net/alineagrde750e" class="agrdesigner-nav-list__item-anchor">
+            <svg class="agrdesigner-nav-list__svg-medium agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#medium-logo"></use></svg>
+          </a>
+        </li>
+
+        <li class="agrdesigner-nav-list__item">
+          <a href="https://www.behance.net/alineagrde750e" class="agrdesigner-nav-list__item-anchor">
+            <svg class="agrdesigner-nav-list__svg-behance agrdesigner-nav-list__svg" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#behance"></use></svg>
+          </a>
+        </li>
+
+        <li class="agrdesigner-nav-list__item">
+          <a href=" https://ca.linkedin.com/in/aline-galvao-rocha-46b818107" class="agrdesigner-nav-list__item-anchor">
+            <svg class="agrdesigner-nav-list__svg-linkedin agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg>
+          </a>
+        </li>
+
+        <li class="agrdesigner-nav-list__item">
+          <a href="https://twitter.com/agrdesigner" class="agrdesigner-nav-list__item-anchor">
+            <svg class="agrdesigner-nav-list__svg-twitter agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
+          </a>
+        </li>
+
+        <li class="agrdesigner-nav-list__item">
+          <a href="https://www.instagram.com/agrdesigner/" class="agrdesigner-nav-list__item-anchor">
+            <svg class="agrdesigner-nav-list__svg-instagram agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
+          </a>
+        </li>
+
+        <li class="agrdesigner-nav-list__item">
+          <a href="https://github.com/agrdesigner" class="agrdesigner-nav-list__item-anchor">
+            <svg class="agrdesigner-nav-list__svg-github agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="agrdesigner-portfolio">
+      <div class="row">
+        <h1 class="agrdesigner-title agrdesigner-main-title">
+            Hi, I’m Aline,<br>
+            <div class="yellow-bar title-bar"></div>
+            a product designer<br>
+            focused on UX.
+        </h1>
+
+        <p class="agrdesigner-description">
+            Currently a UX designer student at RED Academy. Mainly driven by a passion for digital products and coding, I strive to improve and optimize products practicing effective and functional user experience design. I really enjoy collaborating with developers and learning about what's possible and the best way to do things where design and code meet. I like strategizing with the team and planning our tasks and making sure we stay on the right track to reach our goals when creating end-to-end solutions for the customer experience.<br><br>
+            There is always room for growth and improvement, and I aim to always be in this state of constant learning.<br><br>
+            When I’m not designing you can find me exploring BC, hiking, long-boarding, paddle-boarding and skiing.<br><br>
+        </p>
+
+        <h2 class="agrdesigner-title">
+           My work
+        </h2>
+
+        
+        <h3 class="agrdesigner-title">
+            . BoomerangLIFE
+            <div class="yellow-bar boomerang-title"></div>
+        </h3>
+
+        <div class="agrdesigner-works">
+          <img src="images/sazabi.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
+
+          <div class="agrdesigner-works-content">
+            <h4 class="agrdesigner-works-title">UX • PROJECT MANAGEMENT</h4>
+            <p class="agrdesigner-works-description">An interactive app to mentally stimulate seniors with Alzheimer’s or dementia while facilitating a satisfactory social experience.</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="agrdesigner-works-link">Read full case study on Medium <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
+          </div>
         </div>
-        <nav class="agrdesigner-nav">
-          <ul class="agrdesigner-nav-list">
-            <li class="agrdesigner-nav-list__item">
-              <a href="https://www.behance.net/alineagrde750e" class="agrdesigner-nav-list__item-anchor">
-                <svg class="agrdesigner-nav-list__svg-behance agrdesigner-nav-list__svg" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#behance"></use></svg>
-              </a>
-            </li>
 
-            <li class="agrdesigner-nav-list__item">
-              <a href=" https://ca.linkedin.com/in/aline-galvao-rocha-46b818107" class="agrdesigner-nav-list__item-anchor">
-                <svg class="agrdesigner-nav-list__svg-linkedin agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg>
-              </a>
-            </li>
+        <h3 class="agrdesigner-title">
+            . Found on Main
+            <div class="yellow-bar boomerang-title"></div>
+        </h3>
 
-            <li class="agrdesigner-nav-list__item">
-              <a href="https://twitter.com/agrdesigner" class="agrdesigner-nav-list__item-anchor">
-                <svg class="agrdesigner-nav-list__svg-twitter agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
-              </a>
-            </li>
+        <div class="agrdesigner-works">
+          <img src="images/sazabi.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
 
-            <li class="agrdesigner-nav-list__item">
-              <a href="https://www.instagram.com/agrdesigner/" class="agrdesigner-nav-list__item-anchor">
-                <svg class="agrdesigner-nav-list__svg-instagram agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
-              </a>
-            </li>
-
-            <li class="agrdesigner-nav-list__item">
-              <a href="https://github.com/agrdesigner" class="agrdesigner-nav-list__item-anchor">
-                <svg class="agrdesigner-nav-list__svg-github agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <section class="agrdesigner-portfolio">
-          <div class="agrdesigner-logo">
-            <svg class="agrdesigner-logo-svg" viewBox="0 0 717 1024"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#agrdesigner-logo"></use></svg>
+          <div class="agrdesigner-works-content">
+            <h4 class="agrdesigner-works-title">UX • PROJECT MANAGEMENT</h4>
+            <p class="agrdesigner-works-description">An interactive app to mentally stimulate seniors with Alzheimer’s or dementia while facilitating a satisfactory social experience.</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="agrdesigner-works-link">Read full case study on Medium <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
           </div>
+        </div>
 
-          <div class="row">
-            <h1 class="agrdesigner-title">
-              Hi, my name is Aline Galvao Rocha. I am a graphic and web designer. Born in Brazil, now living in Vancouver, BC.
-            </h1>
+        <h3 class="agrdesigner-title">
+            . What The F••D
+            <div class="yellow-bar boomerang-title"></div>
+        </h3>
 
-            <p class="agrdesigner-description">
-              Mainly driven by a passion for graphic design and creating with the Adobe Creative Suite, but also have a keen interest for digital products and coding. When able I work with clients to create an online presence for their business. In doing so, I’ve gained experience working with HTML5, CSS3, WordPress, Mailchimp, and other tools. There is always room for growth and improvement, and I aim to always be in this state of constant learning.<br><br> When I’m not designing you can find me exploring British Columbia, hiking, long boarding and skiing.
-            </p>
+        <div class="agrdesigner-works">
+          <img src="images/sazabi.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
+
+          <div class="agrdesigner-works-content">
+            <h4 class="agrdesigner-works-title">UX • PROJECT MANAGEMENT</h4>
+            <p class="agrdesigner-works-description">An interactive app to mentally stimulate seniors with Alzheimer’s or dementia while facilitating a satisfactory social experience.</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="agrdesigner-works-link">Read full case study on Medium <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
           </div>
-        </section>
-
-        <a href="https://www.behance.net/alineagrde750e" class="agrdesigner-anchored-link">Check out projects on behance</a>
-      </body>
-    </html>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
