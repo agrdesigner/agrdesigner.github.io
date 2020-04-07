@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>AGRDESIGNER - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/agrdesigner.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,500"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rajdhani:600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/agrdesigner.css" />
     <!-- <script src="/build/assets/js/agrdesigner.min.js"></script> -->
   </head>
   <body class="agrdesigner">
     <!-- svg -->
-    <div class="svg-icon-map" style="display: none;">
+    <!-- <svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#medium-logo"></use></svg> -->
+    <!-- <div class="svg-icon-map" style="display: none;">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook"><path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path></symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="github"><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></symbol>
@@ -26,142 +36,6 @@
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="medium-logo"><path d="M5.827 9.733c0.040-0.333-0.093-0.653-0.333-0.867l-2.493-3v-0.453h7.733l5.973 13.107 5.253-13.107h7.373v0.453l-2.133 2.040c-0.173 0.133-0.267 0.373-0.227 0.6v14.987c-0.040 0.227 0.053 0.467 0.227 0.6l2.080 2.040v0.453h-10.453v-0.453l2.147-2.093c0.213-0.2 0.213-0.267 0.213-0.587v-12.12l-5.987 15.2h-0.8l-6.973-15.2v10.187c-0.093 0.427 0.080 0.853 0.387 1.147l2.8 3.427v0.44h-7.947v-0.44l2.8-3.427c0.307-0.293 0.44-0.72 0.36-1.147v-11.787z"/></symbol>
         <symbol id="arrow-right" viewBox="0 0 38 32"><path d="M4.369 13.275h25.113l-9.45-9.1c-0.408-0.379-0.613-0.831-0.613-1.356s0.182-0.984 0.547-1.378c0.365-0.394 0.809-0.591 1.334-0.591s0.992 0.175 1.4 0.525l12.862 12.425c0.408 0.379 0.612 0.839 0.612 1.378s-0.204 0.999-0.612 1.378l-12.95 12.469c-0.379 0.35-0.817 0.525-1.313 0.525-0.554 0-1.021-0.204-1.4-0.613-0.379-0.379-0.561-0.831-0.547-1.356s0.211-0.977 0.591-1.356l9.45-9.1h-25.069c-0.496 0-0.933-0.175-1.313-0.525s-0.583-0.773-0.612-1.269c-0.029-0.554 0.153-1.035 0.547-1.444s0.868-0.612 1.422-0.612z" /></symbol>
       </svg>
-    </div>
-    <nav class="agrdesigner-nav">
-      <p class="agrdesigner-nav-description">Follow me / my work</p>
-      <ul class="agrdesigner-nav-list">
-        <li class="agrdesigner-nav-list__item">
-          <a href="https://medium.com/@agrdesigner" class="agrdesigner-nav-list__item-anchor">
-            <svg class="agrdesigner-nav-list__svg-medium agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#medium-logo"></use></svg>
-          </a>
-        </li>
-
-        <li class="agrdesigner-nav-list__item">
-          <a href="https://www.behance.net/alineagrde750e" class="agrdesigner-nav-list__item-anchor">
-            <svg class="agrdesigner-nav-list__svg-behance agrdesigner-nav-list__svg" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#behance"></use></svg>
-          </a>
-        </li>
-
-        <li class="agrdesigner-nav-list__item">
-          <a href=" https://ca.linkedin.com/in/aline-galvao-rocha-46b818107" class="agrdesigner-nav-list__item-anchor">
-            <svg class="agrdesigner-nav-list__svg-linkedin agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg>
-          </a>
-        </li>
-
-        <li class="agrdesigner-nav-list__item">
-          <a href="https://twitter.com/agrdesigner" class="agrdesigner-nav-list__item-anchor">
-            <svg class="agrdesigner-nav-list__svg-twitter agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg>
-          </a>
-        </li>
-
-        <li class="agrdesigner-nav-list__item">
-          <a href="https://www.instagram.com/agrdesigner/" class="agrdesigner-nav-list__item-anchor">
-            <svg class="agrdesigner-nav-list__svg-instagram agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg>
-          </a>
-        </li>
-
-        <li class="agrdesigner-nav-list__item">
-          <a href="https://github.com/agrdesigner" class="agrdesigner-nav-list__item-anchor">
-            <svg class="agrdesigner-nav-list__svg-github agrdesigner-nav-list__svg" viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use></svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <section class="agrdesigner-portfolio">
-      <div class="row">
-        <h1 class="agrdesigner-title agrdesigner-main-title">
-            Hi, I’m Aline,<br>
-            <div class="yellow-bar title-bar"></div>
-            a product designer<br>with UX focus.
-        </h1>
-
-        <p class="agrdesigner-description">
-            Passion-driven, self-starter, adaptable, and conscientious are some the ways my peers and my dog would describe me. I am fascinated with product design because I believe it is the ability to always move forward, even if that means improving 1% or learning from mistakes. I shine when collaborating with other designers and developers in creating effective and functional end-to-end solutions for the user. My motivation is being able to help others, users, co-workers, businesses, anyone, in their learning process and victories.<br><br>
-            When I’m not designing you can find me at a dog park or walking Link, or exploring BC, either hiking, long-boarding, paddle-boarding or skiing.
-<br><br>
-        </p>
-
-        <h2 class="agrdesigner-title">
-           My work
-        </h2>
-
-
-        <h3 class="agrdesigner-title">
-            . BoomerangLIFE
-            <div class="yellow-bar boomerang-title"></div>
-        </h3>
-
-        <div class="agrdesigner-works">
-          <img src="images/boomeranglife.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
-
-          <div class="agrdesigner-works-content">
-            <h4 class="agrdesigner-works-title">UX • PROJECT MANAGEMENT</h4>
-            <p class="agrdesigner-works-description">An interactive app to mentally stimulate seniors with Alzheimer’s or dementia while facilitating a satisfactory social experience.</p>
-            <a href="https://medium.com/@agrdesigner/boomeranglife-be47ce7c93ed" target="_blank" class="agrdesigner-works-link">Read full case study on Medium <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
-          </div>
-        </div>
-
-        <h3 class="agrdesigner-title">
-            . Bubble
-            <div class="yellow-bar boomerang-title"></div>
-        </h3>
-
-        <div class="agrdesigner-works">
-          <img src="images/bubble.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
-
-          <div class="agrdesigner-works-content">
-            <h4 class="agrdesigner-works-title">UX • UI • BRANDING </h4>
-            <p class="agrdesigner-works-description">The Bubble app allows you to create a space where you can get things done with no interruptions.</p>
-            <a href="https://www.behance.net/gallery/76187487/Bubble-Make-yourself-some-time" target="_blank" class="agrdesigner-works-link">See full project on Behance <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
-          </div>
-        </div>
-        
-        <h3 class="agrdesigner-title">
-            . Global Degree Academy
-            <div class="yellow-bar boomerang-title"></div>
-        </h3>
-
-        <div class="agrdesigner-works">
-          <img src="images/globaldegree.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
-
-          <div class="agrdesigner-works-content">
-            <h4 class="agrdesigner-works-title">UX • UI • PROTOTYPING</h4>
-            <p class="agrdesigner-works-description">Website redesign for a service company providing safe travel and education experiences for global students.</p>
-            <a href="https://medium.com/@agrdesigner/global-degree-academy-website-redesign-e5841f498932" target="_blank" class="agrdesigner-works-link">Read full case study on Medium <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
-          </div>
-        </div>
-        
-        <h3 class="agrdesigner-title">
-            . BiteShare
-            <div class="yellow-bar boomerang-title"></div>
-        </h3>
-
-        <div class="agrdesigner-works">
-          <img src="images/biteshare.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
-
-          <div class="agrdesigner-works-content">
-            <h4 class="agrdesigner-works-title">UX • UI • PROTOTYPING</h4>
-            <p class="agrdesigner-works-description">Improving people's experience looking for new dishes to try through a food social media app. </p>
-            <a href="#" target="_blank" class="agrdesigner-works-link">Case study Coming Soon</a>
-          </div>
-        </div>
-
-        <h3 class="agrdesigner-title">
-            . Found On Main
-            <div class="yellow-bar boomerang-title"></div>
-        </h3>
-
-        <div class="agrdesigner-works">
-          <img src="images/foundonmain.jpg" alt="sazabi doidao" class="agrdesigner-works-img">
-
-          <div class="agrdesigner-works-content">
-            <h4 class="agrdesigner-works-title">UX • UI</h4>
-            <p class="agrdesigner-works-description">Making all home decor products available on main in one e-commerce site. Increasing the shopping experience and local businesses awareness.</p>
-            <a href="https://medium.com/@agrdesigner/found-on-main-st-a-ux-case-study-7ec89ec402ff" target="_blank" class="agrdesigner-works-link">Read full case study on Medium <svg class="link-arrow-right" viewBox="0 0 37 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div> -->
   </body>
 </html>
