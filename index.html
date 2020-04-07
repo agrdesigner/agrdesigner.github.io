@@ -8,34 +8,371 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,500"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Rajdhani:600"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" type="text/css" href="styles/agrdesigner.css" />
     <!-- <script src="/build/assets/js/agrdesigner.min.js"></script> -->
   </head>
   <body class="agrdesigner">
     <!-- svg -->
     <!-- <svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#medium-logo"></use></svg> -->
-    <!-- <div class="svg-icon-map" style="display: none;">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook"><path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="github"><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="instagram"><path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
-        <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
-        <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="linkedin"><path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
-        <path d="M2 12h6v18h-6v-18z"></path>
-        <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitter"><path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 32" id="behance"><path d="M33 6.054h-9.125v2.214h9.125v-2.214zM28.5 13.661c-2.143 0-3.571 1.339-3.714 3.482h7.286c-0.196-2.161-1.321-3.482-3.571-3.482zM28.786 24.107c1.357 0 3.107-0.732 3.536-2.125h3.946c-1.214 3.732-3.732 5.482-7.625 5.482-5.143 0-8.339-3.482-8.339-8.554 0-4.893 3.375-8.625 8.339-8.625 5.107 0 7.929 4.018 7.929 8.839 0 0.286-0.018 0.571-0.036 0.839h-11.75c0 2.607 1.375 4.143 4 4.143zM4.946 23.214h5.286c2.018 0 3.661-0.714 3.661-2.982 0-2.304-1.375-3.214-3.554-3.214h-5.393v6.196zM4.946 13.625h5.018c1.768 0 3.018-0.768 3.018-2.679 0-2.071-1.607-2.571-3.393-2.571h-4.643v5.25zM0 4.536h10.607c3.857 0 7.196 1.089 7.196 5.571 0 2.268-1.054 3.732-3.071 4.696 2.768 0.786 4.107 2.875 4.107 5.696 0 4.571-3.839 6.536-7.929 6.536h-10.911v-22.5z"></path></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="medium-logo"><path d="M5.827 9.733c0.040-0.333-0.093-0.653-0.333-0.867l-2.493-3v-0.453h7.733l5.973 13.107 5.253-13.107h7.373v0.453l-2.133 2.040c-0.173 0.133-0.267 0.373-0.227 0.6v14.987c-0.040 0.227 0.053 0.467 0.227 0.6l2.080 2.040v0.453h-10.453v-0.453l2.147-2.093c0.213-0.2 0.213-0.267 0.213-0.587v-12.12l-5.987 15.2h-0.8l-6.973-15.2v10.187c-0.093 0.427 0.080 0.853 0.387 1.147l2.8 3.427v0.44h-7.947v-0.44l2.8-3.427c0.307-0.293 0.44-0.72 0.36-1.147v-11.787z"/></symbol>
-        <symbol id="arrow-right" viewBox="0 0 38 32"><path d="M4.369 13.275h25.113l-9.45-9.1c-0.408-0.379-0.613-0.831-0.613-1.356s0.182-0.984 0.547-1.378c0.365-0.394 0.809-0.591 1.334-0.591s0.992 0.175 1.4 0.525l12.862 12.425c0.408 0.379 0.612 0.839 0.612 1.378s-0.204 0.999-0.612 1.378l-12.95 12.469c-0.379 0.35-0.817 0.525-1.313 0.525-0.554 0-1.021-0.204-1.4-0.613-0.379-0.379-0.561-0.831-0.547-1.356s0.211-0.977 0.591-1.356l9.45-9.1h-25.069c-0.496 0-0.933-0.175-1.313-0.525s-0.583-0.773-0.612-1.269c-0.029-0.554 0.153-1.035 0.547-1.444s0.868-0.612 1.422-0.612z" /></symbol>
+    <div class="svg-icon-map" style="display: none;">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          id="instagram-logo"
+        >
+          <path
+            d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+          ></path>
+          <path
+            d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+          ></path>
+          <path
+            d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+          ></path>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          id="linkedin-logo"
+        >
+          <path
+            d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"
+          ></path>
+          <path d="M2 12h6v18h-6v-18z"></path>
+          <path
+            d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"
+          ></path>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          id="twitter-logo"
+        >
+          <path
+            d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"
+          ></path>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 37 32"
+          id="behance-logo"
+        >
+          <path
+            d="M33 6.054h-9.125v2.214h9.125v-2.214zM28.5 13.661c-2.143 0-3.571 1.339-3.714 3.482h7.286c-0.196-2.161-1.321-3.482-3.571-3.482zM28.786 24.107c1.357 0 3.107-0.732 3.536-2.125h3.946c-1.214 3.732-3.732 5.482-7.625 5.482-5.143 0-8.339-3.482-8.339-8.554 0-4.893 3.375-8.625 8.339-8.625 5.107 0 7.929 4.018 7.929 8.839 0 0.286-0.018 0.571-0.036 0.839h-11.75c0 2.607 1.375 4.143 4 4.143zM4.946 23.214h5.286c2.018 0 3.661-0.714 3.661-2.982 0-2.304-1.375-3.214-3.554-3.214h-5.393v6.196zM4.946 13.625h5.018c1.768 0 3.018-0.768 3.018-2.679 0-2.071-1.607-2.571-3.393-2.571h-4.643v5.25zM0 4.536h10.607c3.857 0 7.196 1.089 7.196 5.571 0 2.268-1.054 3.732-3.071 4.696 2.768 0.786 4.107 2.875 4.107 5.696 0 4.571-3.839 6.536-7.929 6.536h-10.911v-22.5z"
+          ></path>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          id="medium-logo"
+        >
+          <path
+            d="M5.827 9.733c0.040-0.333-0.093-0.653-0.333-0.867l-2.493-3v-0.453h7.733l5.973 13.107 5.253-13.107h7.373v0.453l-2.133 2.040c-0.173 0.133-0.267 0.373-0.227 0.6v14.987c-0.040 0.227 0.053 0.467 0.227 0.6l2.080 2.040v0.453h-10.453v-0.453l2.147-2.093c0.213-0.2 0.213-0.267 0.213-0.587v-12.12l-5.987 15.2h-0.8l-6.973-15.2v10.187c-0.093 0.427 0.080 0.853 0.387 1.147l2.8 3.427v0.44h-7.947v-0.44l2.8-3.427c0.307-0.293 0.44-0.72 0.36-1.147v-11.787z"
+          />
+        </symbol>
+        <symbol id="arrow-right" viewBox="0 0 38 32">
+          <path
+            d="M4.369 13.275h25.113l-9.45-9.1c-0.408-0.379-0.613-0.831-0.613-1.356s0.182-0.984 0.547-1.378c0.365-0.394 0.809-0.591 1.334-0.591s0.992 0.175 1.4 0.525l12.862 12.425c0.408 0.379 0.612 0.839 0.612 1.378s-0.204 0.999-0.612 1.378l-12.95 12.469c-0.379 0.35-0.817 0.525-1.313 0.525-0.554 0-1.021-0.204-1.4-0.613-0.379-0.379-0.561-0.831-0.547-1.356s0.211-0.977 0.591-1.356l9.45-9.1h-25.069c-0.496 0-0.933-0.175-1.313-0.525s-0.583-0.773-0.612-1.269c-0.029-0.554 0.153-1.035 0.547-1.444s0.868-0.612 1.422-0.612z"
+          />
+        </symbol>
       </svg>
-    </div> -->
+    </div>
+
+    <section class="main-section section-spacing container">
+      <h1 class="main-title">
+        <span class="first-line">hi</span>
+        <span class="main-underline">aline</span>
+        here ux & ui
+        <span class="main-underline">designer</span>
+      </h1>
+
+      <p class="description">
+        Passion-driven, self-starter, adaptable, and conscientious are some the
+        ways my peers and my dog would describe me. I am fascinated with product
+        design because I believe it is the ability to always move forward, even
+        if that means improving 1% or learning from mistakes. I shine when
+        collaborating with other designers and developers in creating effective
+        and functional end-to-end solutions for the user. My motivation is being
+        able to help others, users, co-workers, businesses, anyone, in their
+        learning process and victories.
+      </p>
+    </section>
+
+    <!-- social -->
+    <div class="container m-75">
+      <div class="social">
+        <span class="social-title">follow me / my work</span>
+        <div class="social-links">
+          <a class="social-link" href="/">
+            <svg viewBox="0 0 32 32">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#medium-logo"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="social-link" href="/">
+            <svg viewBox="0 0 32 32">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#behance-logo"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="social-link" href="/">
+            <svg viewBox="0 0 32 32">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#linkedin-logo"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="social-link" href="/">
+            <svg viewBox="0 0 32 32">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#twitter-logo"
+              ></use>
+            </svg>
+          </a>
+
+          <a class="social-link" href="/">
+            <svg viewBox="0 0 32 32">
+              <use
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="#instagram-logo"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <h2 class="primary-title m-32">Case Studies</h2>
+
+      <!-- boomerang life -->
+      <div class="case m-64">
+        <img
+          class="case-img m-32"
+          alt="boomerangLife"
+          src="images/boomerangLIFE@3x.png"
+        />
+
+        <div class="content-wrapper">
+          <h3 class="secondary-title m-12">BoomerangLife</h3>
+          <h4 class="tertiary-title m-24">UX • Project Management</h4>
+
+          <div class="description-wrapper">
+            <p class="description m-48">
+              Improving recreational and social experiences for seniors with
+              Alzheimer’s or dementia. This is done through an app that helps
+              the facilitators run activities efficiently and effectively.
+            </p>
+            <p class="description m-48">
+              I contributed to the project by scheduling and performing
+              interviews, documenting research insights and planning assets, as
+              well as ensuring consistency throughout our mid-fi prototype.
+            </p>
+          </div>
+
+          <a class="button" href="/">View case study on Medium</a>
+        </div>
+      </div>
+
+      <!-- stable -->
+      <div class="case right m-64">
+        <img
+          class="case-img m-32"
+          alt="boomerangLife"
+          src="images/boomerangLIFE@3x.png"
+        />
+
+        <div class="content-wrapper">
+          <h3 class="secondary-title m-12">BoomerangLife</h3>
+          <h4 class="tertiary-title m-24">UX • Project Management</h4>
+
+          <div class="description-wrapper">
+            <p class="description m-48">
+              Improving recreational and social experiences for seniors with
+              Alzheimer’s or dementia. This is done through an app that helps
+              the facilitators run activities efficiently and effectively.
+            </p>
+            <p class="description m-48">
+              I contributed to the project by scheduling and performing
+              interviews, documenting research insights and planning assets, as
+              well as ensuring consistency throughout our mid-fi prototype.
+            </p>
+          </div>
+
+          <a class="button" href="/">View case study on Medium</a>
+        </div>
+      </div>
+
+      <!-- Global Degree Academy -->
+      <div class="case m-64">
+        <img
+          class="case-img m-32"
+          alt="boomerangLife"
+          src="images/boomerangLIFE@3x.png"
+        />
+
+        <div class="content-wrapper">
+          <h3 class="secondary-title m-12">BoomerangLife</h3>
+          <h4 class="tertiary-title m-24">UX • Project Management</h4>
+
+          <div class="description-wrapper">
+            <p class="description m-48">
+              Improving recreational and social experiences for seniors with
+              Alzheimer’s or dementia. This is done through an app that helps
+              the facilitators run activities efficiently and effectively.
+            </p>
+            <p class="description m-48">
+              I contributed to the project by scheduling and performing
+              interviews, documenting research insights and planning assets, as
+              well as ensuring consistency throughout our mid-fi prototype.
+            </p>
+          </div>
+
+          <a class="button" href="/">View case study on Medium</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- side projects -->
+    <section class="container">
+      <h2 class="primary-title">Side projects</h2>
+
+      <ul class="project-list">
+        <li>
+          <img
+            class="case-img m-32"
+            alt="BiteShare"
+            src="images/biteShare@3x.png"
+          />
+          <h3 class="secondary-title m-12">BiteShare</h3>
+          <h4 class="tertiary-title m-24">UX • Project Management</h4>
+          <p class="description m-48">
+            I contributed to the project by scheduling and performing
+            interviews, documenting research insights and planning assets, as
+            well as ensuring consistency throughout our mid-fi prototype.
+          </p>
+
+          <a class="button" href="/">View project on Behance</a>
+        </li>
+
+        <li>
+          <img
+            class="project-img m-32"
+            alt="BiteShare"
+            src="images/biteShare@3x.png"
+          />
+          <h3 class="secondary-title m-12">Escape&Train</h3>
+          <h4 class="tertiary-title m-24">UX • Project Management</h4>
+          <p class="description m-48">
+            I contributed to the project by scheduling and performing
+            interviews, documenting research insights and planning assets, as
+            well as ensuring consistency throughout our mid-fi prototype.
+          </p>
+
+          <a class="button" href="/">View project on Behance</a>
+        </li>
+
+        <li>
+          <img
+            class="case-img m-32"
+            alt="BiteShare"
+            src="images/biteShare@3x.png"
+          />
+          <h3 class="secondary-title m-12">Bubble</h3>
+          <h4 class="tertiary-title m-24">UX • Project Management</h4>
+          <p class="description m-48">
+            I contributed to the project by scheduling and performing
+            interviews, documenting research insights and planning assets, as
+            well as ensuring consistency throughout our mid-fi prototype.
+          </p>
+
+          <a class="button" href="/">View project on Behance</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="social">
+          <span class="social-title">follow me / my work</span>
+          <div class="social-links">
+            <a class="social-link" href="/">
+              <svg viewBox="0 0 32 32">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#medium-logo"
+                ></use>
+              </svg>
+            </a>
+
+            <a class="social-link" href="/">
+              <svg viewBox="0 0 32 32">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#behance-logo"
+                ></use>
+              </svg>
+            </a>
+
+            <a class="social-link" href="/">
+              <svg viewBox="0 0 32 32">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#linkedin-logo"
+                ></use>
+              </svg>
+            </a>
+
+            <a class="social-link" href="/">
+              <svg viewBox="0 0 32 32">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#twitter-logo"
+                ></use>
+              </svg>
+            </a>
+
+            <a class="social-link" href="/">
+              <svg viewBox="0 0 32 32">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#instagram-logo"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="reach">
+          <h3 class="secondary-title m-12">Get in touch</h3>
+          <a href="mailto:aline.agrdesigner@gmail.com?subject=Lets get in touch!" target="_blank" rel="noopener noreferrer" class="footnote">aline.agrdesigner@gmail.com</p>
+          <a href="tel:+16047259752" class="footnote">604 - 725 - 9752</p>
+          <a class="footnote" href="public/AlineGalvaoRocha-Resume.pdf" target="_blank" rel="noopener noreferrer">Download resumé</a>
+        </div>
+      </div>
+
+      <span class="secondary-title centered">Thank you for reading!</span>
+    </footer>
   </body>
 </html>
