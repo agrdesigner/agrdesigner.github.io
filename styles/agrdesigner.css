@@ -270,6 +270,11 @@ template {
   background-color: var(--bgColor);
 }
 
+::selection {
+  background-color: var(--mainColor);
+  color: white;
+}
+
 .site-content {
   opacity: 0.2;
   transform: translateY(10%);
