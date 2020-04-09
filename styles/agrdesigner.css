@@ -273,7 +273,7 @@ template {
 .site-content {
   opacity: 0.2;
   transform: translateY(10%);
-  animation: 1s slidein forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: 1.5s slidein forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 @keyframes slidein {
