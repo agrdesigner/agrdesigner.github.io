@@ -132,8 +132,15 @@ h2 {
 }
 
 h3 {
-  font-size: 64px;
+  font-size: 48px;
   text-transform: none;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 780px) {
+  h3 {
+    font-size: 64px;
+  }
 }
 
 h4 {
@@ -523,13 +530,15 @@ p.project-text-subtitle {
   color: rgba(255, 255, 255, 0.45);
 }
 
-a.project:hover p.project-text-subtitle {
-  color: #1b1b1b;
-  opacity: 0.45;
-}
+@media screen and (min-width: 880px) {
+  a.project:hover p.project-text-subtitle {
+    color: #1b1b1b;
+    opacity: 0.45;
+  }
 
-a.project:hover p.project-text-paragraph {
-  color: #1b1b1b;
+  a.project:hover p.project-text-paragraph {
+    color: #1b1b1b;
+  }
 }
 
 .project-content {
@@ -565,15 +574,13 @@ a.project:hover p.project-text-paragraph {
   height: auto;
 }
 
-.project:hover .project-img {
-  height: 320px;
-  opacity: 1;
+@media screen and (min-width: 880px) {
+  .project:hover .project-img {
+    height: 320px;
+    opacity: 1;
+  }
 }
 
-/* a.project:hover .project-img::after {
-  height: 100%;
-  top: 0;
-} */
 
 .project-button {
   display: flex;
@@ -584,9 +591,9 @@ a.project:hover p.project-text-paragraph {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 76px;
+  width: 68px;
   height: 100%;
-  padding: 40px 24px;
+  padding: 40px 20px;
   text-decoration: none;
   position: absolute;
   inset: 0% 0% 0% auto;
@@ -626,21 +633,23 @@ a.project:hover p.project-text-paragraph {
   max-height: 28px;
 }
 
-a.project:hover {
-  background-color: #fff;
-  color: #1b1b1b;
-}
+@media screen and (min-width: 880px) {
+  a.project:hover {
+    background-color: #fff;
+    color: #1b1b1b;
+  }
 
-a.project:hover .project-text {
-  color: #1b1b1b;
-}
+  a.project:hover .project-text {
+    color: #1b1b1b;
+  }
 
-a.project:hover .project-img {
-  display: block;
-}
+  a.project:hover .project-img {
+    display: block;
+  }
 
-a.project:hover .project-button {
-  opacity: 1;
+  a.project:hover .project-button {
+    opacity: 1;
+  }
 }
 
 /* Ahleenee section */
@@ -701,7 +710,13 @@ a.project:hover .project-button {
 /* Footer */
 
 .footer {
-  padding: 48px 64px;
+  padding: 48px 48px;
+}
+
+@media screen and (min-width: 780px) {
+  .footer {
+    padding: 48px 64px;
+  }
 }
 
 .footer-content {
@@ -728,6 +743,10 @@ a.project:hover .project-button {
 
 .footer .content-right a {
   text-decoration: underline;
+}
+
+.footer .content-right a:hover {
+  color: #deb900;
 }
 
 a.yellow-text {
