@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitButton = document.getElementById("submit-password");
   const errorMessage = document.getElementById("password-error");
 
-  const correctPassword = "LikeAndZeldaLoveYou@123";
+  const correctPassword = "LinkAndZeldaLoveYou@123";
 
   // Check if already authenticated
   const isAuthenticated = sessionStorage.getItem("authenticated");
